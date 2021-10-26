@@ -1,0 +1,103 @@
+.tweet-container {
+    border: 2px solid black;
+    margin: 50px;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dislike-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.retweet-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0px;
+    margin: 0px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+}
+
+.user-container {
+    display: flex;
+    border: 2px solid black;
+}
+/*.title {
+    display: flex;
+    flex-direction: row;
+    background-color: #657786;
+    padding: 12px;
+    color: white;
+}
+
+.content {
+    word-wrap: break-word;
+    padding: 12px;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: #657786;
+    padding: 12px;
+    color: white;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: #657786;
+    padding: 12px;
+    color: white;
+}
+
+.likes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #657786;
+    padding: 12px;
+    color: white;
+}
+
+.retweet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.counter{
+    display: flex;
+}
+
+.dislike{
+    display: flex;
+}
+*/
