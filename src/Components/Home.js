@@ -1,30 +1,30 @@
 import React, { useState, useEffect } from "react";
 import {Link} from "react-router-dom";
 import Tweet from "./Tweet";
-import firestore from "./firebase";
-import { collection, doc, setDoc, getDocs, addDoc } from "firebase/firestore/lite";
+// import firestore from "./firebase";
+// import { collection, doc, setDoc, getDocs, addDoc } from "firebase/firestore/lite";
 
 const Home = () => {
     let [author, setAuthor] = useState("");
     let [content, setContent] = useState("");
     let [date, setDate] = useState("");
     let [tweets, setTweets] = useState([]);
-    useEffect(() => {
+    // useEffect(() => {
 
-      let tweetPosts = collection(firestore, "Tweets");
-      getDocs(tweetPosts).then(snapshot => {
-          //snapshots is an array of all the documents in collection
-          let tempPosts = []
-          snapshot.forEach(document => {
-          tempPosts.push(document.data());
-          })
-          setTweets(tempPosts);
-      });
-    }, []);
+    //   let tweetPosts = collection(firestore, "Tweets");
+    //   getDocs(tweetPosts).then(snapshot => {
+    //       //snapshots is an array of all the documents in collection
+    //       let tempPosts = []
+    //       snapshot.forEach(document => {
+    //       tempPosts.push(document.data());
+    //       })
+    //       setTweets(tempPosts);
+    //   });
+    // }, []);
 
 
-    console.log(tweets);
-    addDoc(collection(firestore, "Tweets"), tweets[0]);
+    // console.log(tweets);
+    // addDoc(collection(firestore, "Tweets"), tweets[0]);
 
     return (
         <div>
