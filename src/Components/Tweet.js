@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const Counter = (button) => {
     const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        if (Math.random() > .5)
+        setTimeout(() => setCount(count + 1), 5000)
+    }, []);
 
     return (
         <div className="counter-container">
@@ -13,6 +19,7 @@ const Counter = (button) => {
                 setCount(count - 1);
             }}><img src="https://www.pngkit.com/png/detail/28-287161_instagram-like-button-png-grey-heart.png" alt="" width="20" height="20"/></button>
             <p class="counter">{button.counter}</p>
+            
         </div>
     );
 };

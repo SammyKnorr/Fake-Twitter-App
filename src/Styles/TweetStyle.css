@@ -42,6 +42,23 @@
     display: flex;
     border: 2px solid black;
 }
+
+.initial {
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+    margin: 20px
+}
+
+.initiallinks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
 /*.title {
     display: flex;
     flex-direction: row;
